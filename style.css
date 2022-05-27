@@ -1,0 +1,33 @@
+h1 {
+    margin-bottom: 5px;
+  }
+  h4 {
+    margin-top: 0;
+  }
+.products , .basket{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.products:last-of-type{
+    margin-right: 0px;
+}
+.product-box{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.product-box div {
+  font-size: 14px;
+}
+.buy-button {
+  padding: 10px;
+  background: orange;
+  cursor: pointer;
+ 
+}
+.product{
+  font-size:32px;
+  background:red;
+  justify-content: center;
+}
