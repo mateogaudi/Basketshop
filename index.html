@@ -5,55 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Api 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="shop">
-        <h1>Welcome to online shop!</h1>
-        <h4>Check out our products:</h4>
-        <div class="products" id="products-wrapper">
-
-            <div class="product-box">
-                <div>Hoodie</div>
-                <div>XL</div>
-                <div>Gray</div>
-                <div>25$</div>
-                <div>Adidas</div>
-                <div class="buy-button" data-product-id="csd8428">Add to cart</div>
-            </div>
-            <div class="product-box">
-                <div>Shoes</div>
-                <div>44</div>
-                <div>Black</div>
-                <div>35$</div>
-                <div>Nike Jordan</div>
-                <div class="buy-button" data-product-id="22fe24">Add to cart</div>
-            </div>
-            <div class="product-box">
-                <div>Gloves</div>
-                <div>M</div>
-                <div>Gray-black</div>
-                <div>10$</div>
-                <div>Tresspass</div>
-                <div class="buy-button" data-product-id="ddsa224ds">Add to cart</div>
-            </div>
-            <div class="product-box">
-                <div>Socks packet</div>
-                <div>42-44</div>
-                <div>White</div>
-                <div>4$</div>
-                <div>Puma</div>
-                <div class="buy-button" data-product-id="c4ef24cg">Add to cart</div>
-            </div>
+    <div class="container">
+        <h1>Products</h1>
+        <div class="box" id="productsBox">
         </div>
-       <div class="basket" id="basketID">
-
-       </div>
+        <h1>Cart</h1>
+        <div class="cart" id="cartBox">
+        </div>
     </div>
-    </div>
-    <script src="Iindex.js"></script>
+    <script src="index.js" type="module" ></script>
+    <script src="cart.js" type="module"></script>
+    <script src="renderToCart.js" type="module"></script>
+    <script src="render.js" type="module"></script>    
+    
 </body>
 
 </html>
