@@ -11,27 +11,29 @@ export function renderToCart(elementType, elementValue, elementId) {
     elementButton.setAttribute('class', 'boxbutton')
     elementButton.setAttribute("id", elementValue.id);
     
-    const itemQuantity = document.createElement("div");
-    itemQuantity.classList.add("itemQuanity");
-    itemQuantity.setAttribute("id","itemQuanity" + elementValue.id);
-    itemQuantity.innerHTML = "ilosc : "
-    
+    const itemQuanity = document.createElement("div");
+    itemQuanity.classList.add("itemQuanity");
+    itemQuanity.setAttribute("id",+ elementValue.id);
+    itemQuanity.innerHTML = "ilosc : 1" ;
     
     const elementWrapperCart = document.createElement("div");
     elementWrapperCart.classList.add('productCart');
     elementWrapperCart.appendChild(elementTitle);
     elementWrapperCart.appendChild(elementPrice);
     elementWrapperCart.appendChild(elementPicture);
-    elementWrapperCart.appendChild(itemQuantity);
+    elementWrapperCart.appendChild(itemQuanity);
     
     
     document.getElementById(elementId).appendChild(elementWrapperCart);
-    let count = 2;
     const numberButtons = document.querySelectorAll(".boxbutton");
+    let count = 1;
     
     numberButtons.forEach(function(button){
         button.addEventListener('click',function(){
-            itemQuantity.innerHTML = "ilosc :" + count++;
+            if(button.id === itemQuanity.id ){
+                count++;
+                itemQuanity.innerHTML = "ilosc : " + count ;
+            }
         });
     })
 }

@@ -13,9 +13,9 @@ export function addToCart(productClicked){
         cart.push(productClicked);
         renderToCart("div",productClicked,"cartBox");
     }else{
-        alert("produkt w koszyku")
+        alert("produkt w koszyku");
+        alert("ZWIEKSZONO ILOSC O 1 SZTUKE !")
     }
-    console.log(cart);
 }
 
 
