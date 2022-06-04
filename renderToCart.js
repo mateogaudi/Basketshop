@@ -15,6 +15,8 @@ export function renderToCart(elementType, elementValue, elementId) {
     itemQuanity.classList.add("itemQuanity");
     itemQuanity.setAttribute("id",+ elementValue.id);
     itemQuanity.innerHTML = "ilosc : 1" ;
+
+   
     
     const elementWrapperCart = document.createElement("div");
     elementWrapperCart.classList.add('productCart');
@@ -23,8 +25,8 @@ export function renderToCart(elementType, elementValue, elementId) {
     elementWrapperCart.appendChild(elementPicture);
     elementWrapperCart.appendChild(itemQuanity);
     
-    
     document.getElementById(elementId).appendChild(elementWrapperCart);
+    
     const numberButtons = document.querySelectorAll(".boxbutton");
     let count = 1;
     
