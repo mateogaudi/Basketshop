@@ -17,7 +17,7 @@ export function render(elementType, elementValue, elementId) {
   elementButton.addEventListener("click", function () {
     addToCart(elementValue);
   })
-    
+  
   const elementWrapper = document.createElement("div");
   elementWrapper.classList.add('product');
   elementWrapper.appendChild(elementTitle);
@@ -28,3 +28,5 @@ export function render(elementType, elementValue, elementId) {
   document.getElementById(elementId).appendChild(elementWrapper);
 
 }
+
+ 

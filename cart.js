@@ -13,10 +13,25 @@ export function addToCart(productClicked){
         cart.push(productClicked);
         renderToCart("div",productClicked,"cartBox");
     }else{
-        alert("produkt w koszyku")
+        alert("produkt w koszyku");
+        alert("ZWIEKSZONO ILOSC O 1 SZTUKE !")
+        cart.push(productClicked);
     }
-    console.log(cart);
+    const elementButtonPrice  = document.createElement("button");
+    
+    elementButtonPrice.classList.add("boxbuttonprice");
+    elementButtonPrice.setAttribute("id", "buttonPrice");
+    elementButtonPrice.innerHTML = "Kup Teraz"
+    
+    document.getElementById("cartBox").appendChild(elementButtonPrice);  
+    
+    elementButtonPrice.addEventListener("click", function(){
+        console.log(cart);
+    })
 }
+
+
+
 
 
 

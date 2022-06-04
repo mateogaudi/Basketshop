@@ -43,11 +43,21 @@
     width: auto;
 
 }
-
-
 button {
     background: darkslategrey;
     border: 1px solid white;
     font-size: 20px;
     color: white;
+}
+div.itemQuanity{
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    background: grey;
+}
+.boxbuttonprice{
+    width: 150px;
+    height:50px;
+    background-color: red;
+    font-size: 30px;
 }
